@@ -81,3 +81,27 @@
     text-transform: uppercase;
     color: $primary-white-color;
 }
+
+.modal-toggle__btn {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+
+    display: block;
+    padding: 0;
+
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+
+    &:hover .modal-toggle__svg,
+    &:focus .modal-toggle__svg {
+        fill: $accent-color;
+
+        transition:  fill $duration $timing-function;
+    }
+
+    @media (min-width:768px) {
+        display: none;
+    }
+}
