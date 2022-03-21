@@ -80,9 +80,6 @@
 
 .portfolio__info {
     padding: 20px 24px;
-
-    border: 1px solid #EEEEEE;
-    border-top: none;
 }
 
 .portfolio__title {
@@ -99,12 +96,25 @@
     position: relative;
 
     overflow: hidden;
+
+    width: (calc(100% + 2px));
+    margin-left: -1px;
 }
 
 .portfolio__item {
     margin-bottom: 30px;
 
+    border: 1px solid #EEEEEE;
+    border-top: none;
+
     cursor: pointer;
+
+    transition: box-shadow $duration $timing-function;
+
+    &:focus,
+    &:hover {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
 
     &:last-child {
         margin-bottom: 0;
@@ -117,7 +127,7 @@
             margin-right: 30px;
         }
         
-        &:nth-last-child(-n +2){
+        &:nth-last-child(-n +1){
             margin-bottom: 0;
         }
     }
@@ -141,12 +151,7 @@
     color: var(--title-text-color);
     text-decoration: none;
 
-    transition: box-shadow $duration $timing-function;
 
-    &:focus,
-    &:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
 }
 
 .portfolio__overlay {

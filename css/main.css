@@ -1119,8 +1119,6 @@ img {
 
 .portfolio__info {
   padding: 20px 24px;
-  border: 1px solid #EEEEEE;
-  border-top: none;
 }
 
 .portfolio__title {
@@ -1134,11 +1132,24 @@ img {
 .portfolio__body {
   position: relative;
   overflow: hidden;
+  width: calc(100% + 2px);
+  margin-left: -1px;
 }
 
 .portfolio__item {
   margin-bottom: 30px;
+  border: 1px solid #EEEEEE;
+  border-top: none;
   cursor: pointer;
+  -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio__item:focus, .portfolio__item:hover {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio__item:last-child {
@@ -1152,7 +1163,7 @@ img {
   .portfolio__item:nth-child(odd) {
     margin-right: 30px;
   }
-  .portfolio__item:nth-last-child(-n +2) {
+  .portfolio__item:nth-last-child(-n +1) {
     margin-bottom: 0;
   }
 }
@@ -1174,15 +1185,6 @@ img {
   display: block;
   color: var(--title-text-color);
   text-decoration: none;
-  -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfolio__link:focus, .portfolio__link:hover {
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio__overlay {
