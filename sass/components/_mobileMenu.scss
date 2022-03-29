@@ -21,6 +21,13 @@
 
 .modal-toggle__svg {
     fill: $title-text-color;
+
+    transition: fill $duration $timing-function; 
+
+    &:hover,
+    &:focus {
+        fill: $accent-color;
+    }
 }
 
 .menu-mobile {
