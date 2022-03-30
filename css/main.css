@@ -1567,6 +1567,16 @@ img {
   display: flex;
 }
 
+.socials-mobile__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 480px) {
+  .socials-mobile__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+
 .socials-mobile__item:not(:last-child)::after {
   content: "";
   display: block;
@@ -1583,15 +1593,5 @@ img {
   letter-spacing: 0.02em;
   color: #2196F3;
   text-decoration: none;
-}
-
-.socials-mobile__link:first-child {
-  margin-bottom: 10px;
-}
-
-@media (min-width: 480px) {
-  .socials-mobile__link:first-child {
-    margin-bottom: 0;
-  }
 }
 /*# sourceMappingURL=main.css.map */

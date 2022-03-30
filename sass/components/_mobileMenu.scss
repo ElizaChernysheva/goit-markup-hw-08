@@ -106,6 +106,14 @@
 .socials-mobile__item {
     display: flex;
 
+    &:not(:last-child) {
+        margin-bottom: 10px;
+
+        @media (min-width:480px) {
+            margin-bottom: 0;
+        }
+    }
+
 }
 
 .socials-mobile__item:not(:last-child)::after{
@@ -127,12 +135,4 @@
     color: $accent-color;
 
     text-decoration: none;
-
-    &:first-child {
-        margin-bottom: 10px;
-
-        @media (min-width:480px) {
-            margin-bottom: 0;
-        }
-    }
 }
