@@ -2,6 +2,8 @@
 
 .header {
     border-bottom: 1px solid #ECECEC;
+    padding-top: 16px;
+    padding-bottom: 16px;
 
     &__content {
         display: flex;
@@ -9,10 +11,13 @@
     }
 }
 
+
 .header__content .logo {
-    margin-top: 16px;
-    margin-bottom: 16px;
-    margin-right: 88px;
+    margin-right: auto;
+
+    @media (min-width:768px) {
+        margin-right: 88px;
+    }
 
     @media (min-width:1200px) {
         margin-right: 93px;

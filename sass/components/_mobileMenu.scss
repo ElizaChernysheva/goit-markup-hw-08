@@ -71,22 +71,30 @@
 
 .contacts__link-phone {
     font-weight: 500;
-    font-size: 34px;
+    font-size: 27px;
     line-height: 1.8;
     letter-spacing: 0.02em;
     color: $accent-color;
 
     margin-bottom: 32px;
+
+    @media (min-width:480px) {
+        font-size: 34px;
+    }
 }
 
 
 .contacts__link-mobile {
     font-weight: 500;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 1.17;
     letter-spacing: 0.02em;
     
     color: $primary-text-color;
+
+    @media (min-width:480px) {
+        font-size: 24px;
+    }
 }
 
 
@@ -97,6 +105,7 @@
 
 .socials-mobile__item {
     display: flex;
+
 }
 
 .socials-mobile__item:not(:last-child)::after{
@@ -118,4 +127,12 @@
     color: $accent-color;
 
     text-decoration: none;
+
+    &:first-child {
+        margin-bottom: 10px;
+
+        @media (min-width:480px) {
+            margin-bottom: 0;
+        }
+    }
 }
