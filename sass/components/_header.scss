@@ -5,16 +5,19 @@
     padding-top: 16px;
     padding-bottom: 16px;
 
+    @media (min-width:768px) {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+
     &__content {
+        position: relative;
+
         display: flex;
         align-items: center;
     }
 }
-
-.header__content {
-    position: relative;
-}
-
 
 .header__content .logo {
     margin-right: auto;

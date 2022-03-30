@@ -40,6 +40,11 @@
 .join {
     &__wrapper {
         padding-top: 12px;
+        margin-bottom: 60px;
+
+        @media (min-width: 768px){
+            margin-bottom: 0;
+        } 
     }
 
     &__header {
@@ -93,6 +98,12 @@
     font-style: normal;
 
     &__wrapper {
+        margin-bottom: 60px;
+
+        @media (min-width: 768px){
+            margin-bottom: 0;
+        } 
+
         @media (min-width: 1200px){
             margin-right: 85px;
         } 
