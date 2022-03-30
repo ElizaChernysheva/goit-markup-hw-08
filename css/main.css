@@ -148,7 +148,7 @@ img {
 .modal-toggle__btn {
   position: absolute;
   right: 15px;
-  top: 10px;
+  top: -3px;
   display: block;
   padding: 0;
   border: none;
@@ -183,6 +183,10 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header__content {
+  position: relative;
 }
 
 .header__content .logo {
@@ -1593,5 +1597,9 @@ img {
   letter-spacing: 0.02em;
   color: #2196F3;
   text-decoration: none;
+}
+
+.js-close-menu {
+  top: 10px;
 }
 /*# sourceMappingURL=main.css.map */

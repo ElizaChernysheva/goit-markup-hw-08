@@ -113,7 +113,6 @@
             margin-bottom: 0;
         }
     }
-
 }
 
 .socials-mobile__item:not(:last-child)::after{
@@ -135,4 +134,9 @@
     color: $accent-color;
 
     text-decoration: none;
+}
+
+
+.js-close-menu {
+    top: 10px;
 }
